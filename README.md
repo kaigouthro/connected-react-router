@@ -1,5 +1,7 @@
 > Breaking change in v5.0.0! Please read [How to migrate from v4 to v5](https://github.com/supasate/connected-react-router/blob/master/FAQ.md#how-to-migrate-from-v4-to-v5).
 
+> v6.0.0 requires React v16.4.0 and React Redux v6.0 or later.
+
 Connected React Router [![Build Status](https://travis-ci.org/supasate/connected-react-router.svg?branch=master)](https://travis-ci.org/supasate/connected-react-router) [![Open Source Helpers](https://www.codetriage.com/supasate/connected-react-router/badges/users.svg)](https://www.codetriage.com/supasate/connected-react-router)
 ======================
 A Redux binding for React Router v4
@@ -25,6 +27,8 @@ Main features
 
 Installation
 -----------
+Connected React Router requires **React 16.4 and Redux 6.0 or later**.
+
 Using [npm](https://www.npmjs.com/):
 
     $ npm install --save connected-react-router
@@ -39,7 +43,7 @@ Usage
 
 - Create a `history` object.
 - Create root reducer as a function that takes `history` as an argument and returns reducer.
-- Add `router` reducer into root reducer by passing `history` to `connectRouter`. Note: The key MUST be `router`.
+- Add `router` reducer into root reducer by passing `history` to `connectRouter`. Note: The key **MUST** be `router`.
 - Use `routerMiddleware(history)` if you want to dispatch history actions (e.g. to change URL with `push('/path/to/somewhere')`).
 
 
@@ -117,6 +121,7 @@ See the [examples](https://github.com/supasate/connected-react-router/tree/maste
 - [How to support Immutable.js](https://github.com/supasate/connected-react-router/tree/master/FAQ.md#how-to-support-immutablejs)
 - [How to implement server-side rendering](https://medium.com/@cereallarceny/server-side-rendering-in-create-react-app-with-all-the-goodies-without-ejecting-4c889d7db25e) ([sample codebase](https://github.com/cereallarceny/cra-ssr))
 - [How to migrate from v4 to v5](https://github.com/supasate/connected-react-router/tree/master/FAQ.md#how-to-migrate-from-v4-to-v5)
+- [How to use your own context with react-redux](https://github.com/supasate/connected-react-router/tree/master/FAQ.md#how-to-use-your-own-context-with-react-redux)
 
 Build
 -----
